@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="orflax.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Orflax</title>
+</head>
+<body>
+    <header>
+        <div class="video-section"></div>
+            <video autoplay muted loop playsinline>
+                <source src="video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="nav-1-bar">
+            <div class="carousel-bg">
+                <img src="bg-img1.jpg"/>
+                <img src="bg-img2.jpg"/>
+                <img src="bg-img3.jpg"/>
+                <img src="bg-img4.jpg"/>
+                <img src="bg-img5.jpg"/>
+            </div>
+            <div class="logo">
+                <img src="logo.png"/>
+            </div>
+            <div class="nav1bar-content">
+                <h4><a href="index.html">Home</a></h4>
+                <h4><a href="homePage.html">About</a></h4>
+                <h4><a href="#contact">Contact us</a></h4>
+                <h4><a href="#products">Products</a></h4>
+                <h4><a href="#gallery">Gallery</a></h4>
+                <h4><a href="#directors-page">Director's Page</a></h4>
+                <div class="call now">
+                    <button class="call-button">Call</button>
+                </div>
+            </div>            
+        </div>
+        <div class="intro">
+            <h2 class="intro-heading">Why Choose Us?</h2>
+        </div>
+        
+        <div class="why-choose-us-container">
+            <div class="why-choose-us-card">
+                <h3>Performance and Reliability</h3>
+                <p>Human Capital leverages research, analytics, and industry insights to help design and execute critical programs from business-driven HR to innovative talent, leadership, and change programs.</p>
+            </div>
+        
+            <div class="why-choose-us-card">
+                <h3>Best Quality</h3>
+                <p>Works with senior executives to help them solve their toughest and most complex problems by bringing an approach to executable strategy that combines deep industry knowledge and insight.</p>
+            </div>
+        
+            <div class="why-choose-us-card">
+                <h3>Technological Development</h3>
+                <p>Delivers solutions that help drive transformation, improve productivity, and streamline business operations. Our practical, innovative solutions are linked to measurable goals to help our clients.</p>
+            </div>
+        
+            <div class="why-choose-us-card">
+                <h3>Sustainability and Responsibility</h3>
+                <p>We are committed to sustainability and responsible practices that minimize environmental impact while maximizing efficiency. Our dedication to sustainable development is evident in our products and processes, ensuring a positive contribution to the communities we serve.</p>
+            </div>
+        
+            <div class="why-choose-us-card">
+                <h3>Comprehensive Range of Products</h3>
+                <p>We provide a wide range of copper and aluminum wires and cables suitable for various applications. Whether for residential, commercial, or industrial use, our diverse portfolio ensures that we have the right solution for your needs.</p>
+            </div>
+
+            <div class="why-choose-us-card">
+                <h3>Expertise and Innovation</h3>
+                <p>Our team consists of industry experts with years of experience in wires and cables. We invest in research and development to stay at the forefront of technological advancements, offering solutions that meet current demands and anticipate future trends.</p>
+            </div>
+        </div>
+        
+
+        <div id="contact" style="display: none;"> <!-- Initially hidden -->
+            <div class="nav-3-bar">
+                <h2>Contact us</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contacts">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h6>B-42/15 Jhilmil Industrial Area , G.T.Road , Delhi 110 095</h6>
+                </div>
+                <div class="contacts">
+                    <i class="fa-regular fa-envelope"></i>
+                    <h6>Connect@orflaxindia.com</h6>
+                </div>
+                <div class="contacts">
+                    <i class="fa-solid fa-phone"></i>
+                    <h6>+91 93134 93405 | +91 93136 66292 | +91 92051 93405 | 011-41523405</h6>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contact Us</h2>
+                <p><i class="fas fa-phone"></i> 011-41523405</p>
+                <p><i class="fas fa-envelope"></i> connect@orflaxindia.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> B-42/15 Jhilmil Industrial Area , G.T.Road , Delhi 110 095</p>
+            </div>
+            <div class="footer-section connection">
+                <h2>Connect with us</h2>
+                <div class="social-network">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 ORFLAX INDIA PVT LTD | All Rights Reserved</p>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    // Get all links
+            const links = document.querySelectorAll('.nav1bar-content a');
+            const contactSection = document.getElementById('contact');
+
+            links.forEach(link => {
+                link.addEventListener('click', function(event) {
+                    const targetId = this.getAttribute('href');
+
+            // Check if the link is pointing to the contact section
+                    if (targetId === '#contact') {
+                // Prevent the default link behavior
+                        event.preventDefault();
+
+                // Scroll smoothly to the contact section
+                        contactSection.scrollIntoView({ behavior: 'smooth' });
+
+                // Show the contact section if it's hidden
+                        contactSection.style.display = 'block';
+                    }
+                });
+            });
+        });
+
+
+    </script>
+</body>
+</html>
+
+
+s
